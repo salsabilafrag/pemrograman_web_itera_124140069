@@ -99,13 +99,13 @@ Tampilan awal aplikasi berisi form untuk memasukkan nama barang, harga satuan, d
 
 Jika pengguna menekan tombol **Tambahkan Produk** tanpa mengisi data yang diperlukan, aplikasi menampilkan pesan validasi pada masing-masing input.
 
- ![Image Alt]([screenshots/02-validasi-error.png](https://github.com/salsabilafrag/pemrograman_web_itera_124140069/blob/f9149a0286eb6e7f7c2dab005aadf9c519524cbc/Salsabila%20Afra_124140069_pertemuan1/screenshot/02-validasi-error.png))
+ ![Image Alt](https://github.com/salsabilafrag/pemrograman_web_itera_124140069/blob/f9149a0286eb6e7f7c2dab005aadf9c519524cbc/Salsabila%20Afra_124140069_pertemuan1/screenshot/02-validasi-error.png))
 
 ### 5.3 Hasil Perhitungan dan Tabel Data Transaksi
 
 Setelah data barang dimasukkan, aplikasi menampilkan tabel keranjang, total belanja, diskon, total akhir, status pembayaran, dan kembalian.
 
- ![Image Alt]([screenshots/03-hasil-perhitungan.png](https://github.com/salsabilafrag/pemrograman_web_itera_124140069/blob/f9149a0286eb6e7f7c2dab005aadf9c519524cbc/Salsabila%20Afra_124140069_pertemuan1/screenshot/03-hasil-perhitungan.png))
+ ![Image Alt](https://github.com/salsabilafrag/pemrograman_web_itera_124140069/blob/f9149a0286eb6e7f7c2dab005aadf9c519524cbc/Salsabila%20Afra_124140069_pertemuan1/screenshot/03-hasil-perhitungan.png))
 
 > **Catatan:** Pada implementasi saat ini, tabel yang ditampilkan merupakan **data keranjang/transaksi aktif** yang juga disimpan di `localStorage`, bukan riwayat beberapa transaksi yang terpisah.
 
