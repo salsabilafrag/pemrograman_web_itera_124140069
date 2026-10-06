@@ -1,0 +1,352 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: #171717;
+    color: #f5f5f5;
+    min-height: 100vh;
+}
+
+
+
+.header {
+    background: #202020;
+    border-bottom: 1px solid #333;
+    padding: 24px 40px;
+}
+
+.header h1 {
+    font-size: 28px;
+    color: #ff9f1c;
+    margin-bottom: 4px;
+}
+
+.header p {
+    color: #999;
+    font-size: 14px;
+}
+
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 330px 1fr;
+    gap: 20px;
+}
+
+
+
+.panel {
+    background: #222;
+    border: 1px solid #333;
+    border-radius: 14px;
+    padding: 24px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.panel h2 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.description {
+    color: #999;
+    font-size: 13px;
+    margin-bottom: 22px;
+}
+
+
+.form-panel {
+    grid-row: span 2;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label,
+.payment-form label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #ddd;
+}
+
+input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #444;
+    border-radius: 8px;
+    background: #181818;
+    color: white;
+    font-size: 14px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #ff9f1c;
+}
+
+input::placeholder {
+    color: #666;
+}
+
+
+.error {
+    display: block;
+    color: #ff5c5c;
+    font-size: 12px;
+    margin-top: 6px;
+    min-height: 15px;
+}
+
+
+/* ========================================
+   BUTTON TAMBAH
+======================================== */
+
+.btn-primary {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    background: #ff9f1c;
+    color: #171717;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-primary:hover {
+    background: #ffb84d;
+}
+
+
+/* ========================================
+   CART
+======================================== */
+
+.cart-panel {
+    overflow: hidden;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th {
+    text-align: left;
+    font-size: 12px;
+    color: #999;
+    padding: 12px;
+    border-bottom: 1px solid #444;
+    white-space: nowrap;
+}
+
+td {
+    padding: 13px 12px;
+    border-bottom: 1px solid #333;
+    font-size: 13px;
+    color: #ddd;
+}
+
+tbody tr:hover {
+    background: #292929;
+}
+
+
+/* ========================================
+   BUTTON HAPUS
+======================================== */
+
+.btn-hapus {
+    border: 1px solid #ff5c5c;
+    background: transparent;
+    color: #ff5c5c;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.btn-hapus:hover {
+    background: #ff5c5c;
+    color: white;
+}
+
+
+/* ========================================
+   PAYMENT
+======================================== */
+
+.payment-panel {
+    display: flex;
+    flex-direction: column;
+}
+
+.summary-box {
+    margin-top: 10px;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #333;
+    color: #aaa;
+}
+
+.summary-item strong {
+    color: #eee;
+}
+
+.grand-total {
+    margin-top: 5px;
+    padding: 15px 0;
+    border-bottom: none;
+    font-size: 18px;
+}
+
+.grand-total span {
+    color: white;
+    font-weight: bold;
+}
+
+.grand-total strong {
+    color: #ff9f1c;
+}
+
+
+/* ========================================
+   PAYMENT FORM
+======================================== */
+
+.payment-form {
+    margin-top: 5px;
+}
+
+#statusPembayaran {
+    min-height: 20px;
+    margin-top: 7px;
+    font-size: 13px;
+}
+
+.change-box {
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    background: #181818;
+    border: 1px solid #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.change-box span {
+    color: #aaa;
+}
+
+.change-box strong {
+    color: #ff9f1c;
+    font-size: 18px;
+}
+
+
+/* ========================================
+   BUTTON RESET
+======================================== */
+
+.btn-reset {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    border: 1px solid #555;
+    border-radius: 8px;
+    background: transparent;
+    color: #ddd;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-reset:hover {
+    background: #333;
+}
+
+
+/* ========================================
+   FOOTER
+======================================== */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #666;
+    font-size: 12px;
+}
+
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 800px) {
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .form-panel {
+        grid-row: auto;
+    }
+
+    .header {
+        padding: 20px;
+    }
+
+    .container {
+        width: 94%;
+        margin-top: 20px;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .panel {
+        padding: 18px;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+
+    th,
+    td {
+        padding: 9px;
+    }
+}

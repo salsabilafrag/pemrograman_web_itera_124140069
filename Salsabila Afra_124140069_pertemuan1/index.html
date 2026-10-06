@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickCash - Mini POS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div>
+            <h1>QuickCash</h1>
+            <p>Mini Point of Sale</p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="panel form-panel">
+            <h2>Tambah Produk</h2>
+            <p class="description">
+                Masukkan informasi barang yang ingin ditambahkan.
+            </p>
+
+            <form id="formBarang">
+
+                <div class="form-group">
+                    <label for="namaBarang">Nama Barang</label>
+                    <input
+                        type="text"
+                        id="namaBarang"
+                        placeholder="Contoh: Roti Cokelat"
+                    >
+                    <small id="errorNama" class="error"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="hargaBarang">Harga Satuan</label>
+                    <input
+                        type="number"
+                        id="hargaBarang"
+                        placeholder="Contoh: 5000"
+                    >
+                    <small id="errorHarga" class="error"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="qtyBarang">Jumlah</label>
+                    <input
+                        type="number"
+                        id="qtyBarang"
+                        placeholder="Contoh: 2"
+                    >
+                    <small id="errorQty" class="error"></small>
+                </div>
+
+                <button type="submit" class="btn-primary">
+                    + Tambahkan Produk
+                </button>
+
+            </form>
+        </section>
+
+
+        <section class="panel cart-panel">
+
+            <div class="section-heading">
+                <div>
+                    <h2>Keranjang</h2>
+                    <p class="description">Daftar produk yang dipilih</p>
+                </div>
+            </div>
+
+            <div class="table-wrapper">
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Produk</th>
+                            <th>Harga</th>
+                            <th>Qty</th>
+                            <th>Subtotal</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tabelKeranjang">
+        
+                    </tbody>
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <section class="panel payment-panel">
+
+            <h2>Ringkasan Pembayaran</h2>
+
+            <div class="summary-box">
+
+                <div class="summary-item">
+                    <span>Total Belanja</span>
+                    <strong id="totalBelanja">Rp 0</strong>
+                </div>
+
+                <div class="summary-item">
+                    <span>Diskon</span>
+                    <strong id="totalDiskon">Rp 0</strong>
+                </div>
+
+                <div class="summary-item grand-total">
+                    <span>Total Akhir</span>
+                    <strong id="totalAkhir">Rp 0</strong>
+                </div>
+
+            </div>
+
+
+            <div class="payment-form">
+
+                <label for="uangBayar">Uang Pembayaran</label>
+
+                <input
+                    type="number"
+                    id="uangBayar"
+                    placeholder="Masukkan jumlah uang"
+                >
+
+                <p id="statusPembayaran"></p>
+
+                <div class="change-box">
+                    <span>Kembalian</span>
+                    <strong id="kembalian">Rp 0</strong>
+                </div>
+
+            </div>
+
+
+            <button id="btnReset" class="btn-reset">
+                Transaksi Baru
+            </button>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>QuickCash &copy; 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
