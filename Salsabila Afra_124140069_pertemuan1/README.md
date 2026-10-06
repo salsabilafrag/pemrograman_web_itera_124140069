@@ -93,7 +93,7 @@ Studi kasus yang digunakan adalah **sistem kasir sederhana (Mini POS)**. Sistem 
 
 Tampilan awal aplikasi berisi form untuk memasukkan nama barang, harga satuan, dan jumlah barang.
 
-![Form Input Utama](screenshots/01-form-input.png)
+![Form Input Utama][(screenshots/01-form-input.png](https://github.com/salsabilafrag/pemrograman_web_itera_124140069/blob/1645c937bcc575d04c312669ac905e42674833e8/Salsabila%20Afra_124140069_pertemuan1/screenshot/01-form-input.png))
 
 ### 5.2 Tampilan Validasi Error
 
