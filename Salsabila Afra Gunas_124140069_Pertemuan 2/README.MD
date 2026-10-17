@@ -24,7 +24,7 @@ Struktur file:
 ├── script.js
 └── README.md
 Screenshot 
-![Image Alt]()
+![Image Alt](https://github.com/salsabilafrag/pemrograman_web_itera_124140069/blob/78fd6cfa678328461aa828af8fe81f78d1c86db8/Salsabila%20Afra%20Gunas_124140069_Pertemuan%202/Dashboard1.png)
 
 Fitur ES6+ yang Diimplementasikan
 
