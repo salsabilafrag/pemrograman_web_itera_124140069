@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tugas Kuliah Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar__main">
+      <h1>📚 Tugas Kuliah</h1>
+      <p id="clock" class="clock" aria-live="off"></p>
+    </div>
+    <div class="widgets">
+      <section class="widget" id="quote" aria-label="Kutipan harian">Memuat kutipan…</section>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="card stats" aria-label="Ringkasan">
+      <div class="stat"><span id="statTotal">0</span><small>Total</small></div>
+      <div class="stat"><span id="statActive">0</span><small>Aktif</small></div>
+      <div class="stat"><span id="statDone">0</span><small>Selesai</small></div>
+      <div class="stat stat--warn"><span id="statOverdue">0</span><small>Terlambat</small></div>
+      <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" id="progress">
+        <div class="progress__bar" id="progressBar"></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 id="formTitle">Tambah Tugas</h2>
+      <form id="taskForm" class="form" autocomplete="off">
+        <label>Judul tugas
+          <input type="text" id="title" required maxlength="100">
+        </label>
+        <label>Mata kuliah
+          <input type="text" id="course" maxlength="60">
+        </label>
+        <label>Deadline
+          <input type="date" id="deadline">
+        </label>
+        <label>Prioritas
+          <select id="priority">
+            <option value="rendah">Rendah</option>
+            <option value="sedang" selected>Sedang</option>
+            <option value="tinggi">Tinggi</option>
+          </select>
+        </label>
+        <div class="form__actions">
+          <button type="submit" id="submitBtn" class="btn btn--primary">Tambah</button>
+          <button type="button" id="cancelBtn" class="btn" hidden>Batal</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="card">
+      <div class="toolbar">
+        <input type="search" id="search" placeholder="Cari tugas / mata kuliah…" aria-label="Cari tugas">
+        <div class="filters" role="group" aria-label="Filter">
+          <button class="chip is-active" data-filter="all">Semua</button>
+          <button class="chip" data-filter="active">Aktif</button>
+          <button class="chip" data-filter="done">Selesai</button>
+        </div>
+        <button id="clearDone" class="btn btn--danger">Hapus yang selesai</button>
+      </div>
+      <ul id="taskList" class="tasks"></ul>
+    </section>
+  </main>
+
+  <footer class="footer">Data tersimpan di browser (localStorage) • Kutipan: DummyJSON • Data contoh: JSONPlaceholder</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
