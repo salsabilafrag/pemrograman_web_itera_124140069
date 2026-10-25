@@ -1,0 +1,19 @@
+.home__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.25rem;
+}
+
+.home__header h1 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.home__subtitle {
+  margin: 0.2rem 0 0;
+  color: #64748b;
+  font-size: 0.9rem;
+}

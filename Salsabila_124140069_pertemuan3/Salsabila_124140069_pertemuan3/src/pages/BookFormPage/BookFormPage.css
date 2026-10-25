@@ -1,0 +1,9 @@
+.form-page {
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.form-page h1 {
+  font-size: 1.6rem;
+  margin: 0 0 1rem;
+}
