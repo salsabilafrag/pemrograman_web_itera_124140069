@@ -40,7 +40,7 @@ dan **Matakuliah** dengan database **PostgreSQL**. Aplikasi menerapkan:
 
 ## Struktur Proyek
 
-```text
+text
 salsabilaafragunas_124140069_pertemuan6/
 ├── alembic.ini
 ├── development.ini
@@ -69,7 +69,6 @@ salsabilaafragunas_124140069_pertemuan6/
         ├── default.py
         ├── mahasiswa.py
         └── matakuliah.py
-```
 
 ## Instalasi dan Menjalankan Aplikasi
 
@@ -80,7 +79,7 @@ salsabilaafragunas_124140069_pertemuan6/
 
 ### 2. Buat Virtual Environment dan Install Dependensi
 
-```bash
+bash
 python -m venv venv
 
 # Linux / macOS
@@ -90,32 +89,29 @@ venv\Scripts\activate
 
 pip install --upgrade pip setuptools
 pip install -e .
-```
 
 ### 3. Buat Database PostgreSQL
 
-```bash
+bash
 psql -U postgres -c "CREATE DATABASE pyramid_mahasiswa;"
-```
+
 
 ### 4. Sesuaikan Koneksi Database
 
 Ubah `sqlalchemy.url` pada **`development.ini`** dan **`alembic.ini`**
 (nilainya harus sama):
 
-```ini
+ini
 sqlalchemy.url = postgresql+psycopg2://USER:PASSWORD@localhost:5432/pyramid_mahasiswa
-```
 
 ### 5. Jalankan Migrasi Alembic
 
-```bash
+bash
 # (opsional) membuat revisi baru secara otomatis dari perubahan model
 alembic revision --autogenerate -m "create matakuliah table"
 
 # menerapkan seluruh migrasi ke database
 alembic upgrade head
-```
 
 > Berkas migrasi untuk tabel `mahasiswa` dan `matakuliah` sudah tersedia di
 > `pyramid_mahasiswa/alembic/versions/`, sehingga cukup menjalankan
@@ -124,18 +120,16 @@ alembic upgrade head
 
 ### 6. Isi Data Awal (Seeding)
 
-```bash
+bash
 initialize_pyramid_mahasiswa_db development.ini
-```
 
 Seeding menambahkan 4 mata kuliah (IF2110, IF3140, IF2210, IF3130) dan 2
 mahasiswa. Perintah ini aman dijalankan berulang kali (data tidak digandakan).
 
 ### 7. Jalankan Server
 
-```bash
+bash
 pserve development.ini --reload
-```
 
 Server berjalan di `http://localhost:6543`.
 
@@ -143,7 +137,7 @@ Server berjalan di `http://localhost:6543`.
 
 ### Matakuliah
 
-```bash
+bash
 # 1. GET semua mata kuliah
 curl -i http://localhost:6543/api/matakuliah
 
@@ -175,11 +169,10 @@ curl -i -X PUT http://localhost:6543/api/matakuliah/1 \
 
 # 8. DELETE hapus mata kuliah (200)
 curl -i -X DELETE http://localhost:6543/api/matakuliah/5
-```
 
 ### Mahasiswa
 
-```bash
+bash
 curl -i http://localhost:6543/api/mahasiswa
 curl -i http://localhost:6543/api/mahasiswa/1
 
@@ -192,7 +185,6 @@ curl -i -X PUT http://localhost:6543/api/mahasiswa/1 \
   -d '{"jurusan": "Sistem Informasi"}'
 
 curl -i -X DELETE http://localhost:6543/api/mahasiswa/3
-```
 
 ## Bukti Pengujian (Screenshot)
 
@@ -207,7 +199,7 @@ curl -i -X DELETE http://localhost:6543/api/mahasiswa/3
 | POST berhasil (201) | ![POST](Screenshoot/prak 6.2.png) |
 | PUT berhasil (200) | ![PUT](Screenshoot/prak 6.3.png) |
 | DELETE berhasil (200) | ![DELETE](Screenshoot/prak 6.4.png) |
-| API | (Screenshoot/prak 6.10.png)
+| API | ![API] (Screenshoot/prak 6.10.png)
 
 ### Mahasiswa
 
@@ -218,4 +210,4 @@ curl -i -X DELETE http://localhost:6543/api/mahasiswa/3
 | POST mahasiswa | ![POST](Screenshoot/prak 6.7.png) |
 | PUT mahasiswa | ![PUT](Screenshoot/prak 6.8.png) |
 | DELETE mahasiswa | ![DELETE](Screenshoot/prak 6.9.png) |
-| API              | (Screenshoot/prak 6.11.png)
+| API              | ![API] (Screenshoot/prak 6.11.png)
