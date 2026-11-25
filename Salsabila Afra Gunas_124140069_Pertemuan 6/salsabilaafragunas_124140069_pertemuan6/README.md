@@ -3,7 +3,7 @@
 ## Identitas Praktikan
 
 | | |
-|---|---|
+| | |
 | **Nama Lengkap** | Salsabila Afra Gunas |
 | **NIM** | 124140069 |
 | **Kelas Praktikum** | RB |
@@ -22,7 +22,7 @@ dan **Matakuliah** dengan database **PostgreSQL**. Aplikasi menerapkan:
 ### Daftar Endpoint
 
 | Method | URL | Keterangan | Status Code |
-|---|---|---|---|
+| | | | |
 | GET | `/api/matakuliah` | Daftar seluruh mata kuliah | 200 |
 | GET | `/api/matakuliah/{id}` | Detail mata kuliah | 200, 404 |
 | POST | `/api/matakuliah` | Tambah mata kuliah | 201, 400 |
@@ -194,7 +194,7 @@ curl -i -X DELETE http://localhost:6543/api/mahasiswa/3
 ### Matakuliah
 
 | Pengujian | Screenshot |
-|---|---|
+| | |
 | GET semua matakuliah | ![GET list](Screenshoot/prak 6.1.png) |
 | POST berhasil (201) | ![POST](Screenshoot/prak 6.2.png) |
 | PUT berhasil (200) | ![PUT](Screenshoot/prak 6.3.png) |
@@ -204,7 +204,7 @@ curl -i -X DELETE http://localhost:6543/api/mahasiswa/3
 ### Mahasiswa
 
 | Pengujian | Screenshot |
-|---|---|
+| | |
 | GET semua mahasiswa | ![GET list](Screenshoot/prak 6.5.png) | 
 | GET detail mahasiswa | ![GET list](Screenshoot/prak 6.6.png) |
 | POST mahasiswa | ![POST](Screenshoot/prak 6.7.png) |
