@@ -195,19 +195,19 @@ curl -i -X DELETE http://localhost:6543/api/mahasiswa/3
 
 | Pengujian | Screenshot |
 |---|---|
-| GET semua matakuliah | ![GET list](Screenshoot/prak-6-1.png) |
-| POST berhasil (201) | ![POST](Screenshoot/prak-6-2.png) |
-| PUT berhasil (200) | ![PUT](Screenshoot/prak-6-3.png) |
-| DELETE berhasil (200) | ![DELETE](Screenshoot/prak-6-4.png) |
-| API | ![API](Screenshoot/prak-6-10.png) |
+| GET semua matakuliah | ![GET list](Screenshoot/prak 6.1.png) |
+| POST berhasil (201) | ![POST](Screenshoot/prak 6.2.png) |
+| PUT berhasil (200) | ![PUT](Screenshoot/prak 6.3.png) |
+| DELETE berhasil (200) | ![DELETE](Screenshoot/prak 6.4.png) |
+| API | ![API](Screenshoot/prak 6.10.png) |
 
 ### Mahasiswa
 
 | Pengujian | Screenshot |
 |---|---|
-| GET semua mahasiswa | ![GET list](Screenshoot/prak-6-5.png) |
-| GET detail mahasiswa | ![GET detail](Screenshoot/prak-6-6.png) |
-| POST mahasiswa | ![POST mahasiswa](Screenshoot/prak-6-7.png) |
-| PUT mahasiswa | ![PUT](Screenshoot/prak-6-8.png) |
-| DELETE mahasiswa | ![DELETE](Screenshoot/prak-6-9.png) |
-| API | ![API](Screenshoot/prak-6-11.png) |
+| GET semua mahasiswa | ![GET list](Screenshoot/prak 6.5.png) |
+| GET detail mahasiswa | ![GET detail](Screenshoot/prak 6.6.png) |
+| POST mahasiswa | ![POST mahasiswa](Screenshoot/prak 6.7.png) |
+| PUT mahasiswa | ![PUT](Screenshoot/prak 6.8.png) |
+| DELETE mahasiswa | ![DELETE](Screenshoot/prak 6.9.png) |
+| API | ![API](Screenshoot/prak 6.11.png) |
